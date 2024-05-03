@@ -88,7 +88,6 @@ public class BlockArcanaPortal extends Block {
             return;
 
         boolean canTransfer = entity.timeUntilPortal <= 0;
-        entity.timeUntilPortal = 40;
 
         if (!canTransfer)
             return;
@@ -98,6 +97,7 @@ public class BlockArcanaPortal extends Block {
             destination = DimensionType.OVERWORLD;
         }
 
+        entity.timeUntilPortal = 200;
         transferEntity(entity, destination);
     }
 
