@@ -328,7 +328,7 @@ public abstract class TileEntityModFurnace extends TileEntity implements ISidedI
 
     @Override
     public boolean canExtractItem(int index, ItemStack stack, EnumFacing direction) {
-        if (index == 1) {
+        if (index == 2) {
             return true;
         }
         return false;
